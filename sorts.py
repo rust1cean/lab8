@@ -39,20 +39,6 @@ def selection_sort(arr: list[Number]) -> list[Number]:
     return arr
 
 
-# def quick_sort(arr: list[Number]) -> list[Number]:
-#     if len(arr) < 2:
-#         return arr
-
-#     pivot = min([max([arr[0], arr[-1]]), arr[ceil(len(arr) / 2)]])
-
-#     return [
-#         *quick_sort([x for x in arr if x < pivot]),
-#         *list(filter(lambda x: x == pivot, arr)),
-#         *quick_sort([x for x in arr if x > pivot]),
-#     ]
-
-
-# 0.020589 seconds
 def quick_sort(arr: list[Number]) -> list[Number]:
     if len(arr) < 2:
         return arr

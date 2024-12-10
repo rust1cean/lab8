@@ -64,8 +64,8 @@ if __name__ == "__main__":
     try:
         with open("sorts_output.txt", "w", encoding="UTF-8") as f:
             try:
-                # f.write(try_bubble_sort())
-                # f.write(try_selection_sort())
+                f.write(try_bubble_sort())
+                f.write(try_selection_sort())
                 f.write(try_quick_sort())
             except (IOError, OSError) as e:
                 print(f"Error writing to file: {e}")
