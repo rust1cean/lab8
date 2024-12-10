@@ -44,7 +44,7 @@ def quick_sort(arr: list[Number]) -> list[Number]:
         return arr
 
     pivot = min([max([arr[0], arr[-1]]), arr[ceil(len(arr) / 2)]])
-    less, equal, greater = ([], [], [])
+    less, equal, greater = [], [], []
 
     for x in arr:
         (less if x < pivot else greater if x > pivot else equal).append(x)
